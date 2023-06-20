@@ -75,12 +75,26 @@ print(my_copy)
 # len() method returns the length of the list
 size = len(my_copy)
 print(size)
-
 # min() method returns the smallest element in the list
-minimum = min(my_copy)
+ 
 
+def max_number(my_list: list):
+    max = my_list[0]
+    for i in my_list:
+        if i > max:
+            max = i
+    return max
+def min_number(my_list: list):
+    min = my_list[0]
+    for i in my_list:
+        if i < min:
+            min = i
+    return min
+
+minimum = min_number([23,11,23,34,45,56,67,78,89,90])
 # max() method returns the largest element in the list
-maximum = max(my_copy)
+maximum = max_number([23,11,23,34,45,56,67,78,89,90])
+
 print(minimum,maximum)
 
 
