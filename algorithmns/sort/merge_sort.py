@@ -48,7 +48,7 @@ def merge_sort(nlist):
             
         while i < len(left):
             nlist[k] = left[i]
-            i=i+1;
+            i=i+1
             k = k +1
             
         while j < len(right):
